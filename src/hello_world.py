@@ -6,8 +6,10 @@ def main() -> None:
     a = 5
     b = 0
 
-    result = a / b
- 
+    if b == 0:
+        result = "undefined (division by zero)"
+    else:
+        result = a / b
 
     print(f"a = {a}, b={b}, results = {result}")
     print("Goodbye World")
